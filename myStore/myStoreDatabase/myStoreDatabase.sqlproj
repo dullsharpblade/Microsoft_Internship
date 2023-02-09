@@ -56,9 +56,14 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="scripts" />
+    <Folder Include="tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="customer.sql" />
+    <Build Include="tables\customer.sql" />
+    <Build Include="scripts\insertscript.sql" />
+    <Build Include="scripts\SQLQuery1.sql" />
+    <Build Include="scripts\updatescript.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="myStoreDatabase.publish.xml" />
