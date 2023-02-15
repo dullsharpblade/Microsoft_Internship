@@ -22,4 +22,7 @@
 /myStore/myStoreDatabase/bin/Debug/myStoreDatabase.dll
 /myStore/myStore/obj/Debug/net6.0/ref/myStore.dll
 /myStore/myStore/obj/Debug/net6.0/refint/myStore.dll
-/myStore/myStore/obj/Debug/net6.0/apphost.exe
+/myStore/myStore/obj/Debug/net6.0/*
+/myStore/myStoreDatabase/bin/Debug/myStoreDatabase.pdb
+/myStore/myStore/obj/Debug/net6.0/myStore.pdb
+/myStore/.vs/myStore/FileContentIndex/*
