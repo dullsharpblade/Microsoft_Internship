@@ -61,9 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="tables\customer.sql" />
-    <Build Include="scripts\insertscript.sql" />
-    <Build Include="scripts\SQLQuery1.sql" />
-    <Build Include="scripts\updatescript.sql" />
+    <None Include="scripts\insertscript.sql" />
+    <None Include="scripts\SQLQuery1.sql" />
+    <None Include="scripts\updatescript.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="myStoreDatabase.publish.xml" />

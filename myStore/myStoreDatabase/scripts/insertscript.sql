@@ -18,4 +18,4 @@ DELETE customer where customerid = 5
 Alter table customer add phonenumber varchar (10) 
 update customer set phonenumber = '265-624-3545' where customerid = 6
 Alter table customer alter column phonenumber varchar (20)
-/*
+*/

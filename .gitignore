@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+
+*.dll
+*.exe
+
+/myStore/.vs/**
+
+
+/myStore/myStoreDatabase/obj/Debug/myStoreDatabase.dll
+*/myStore/bin
+*/bin/Debug
+*/bin/*
+
+/myStore/myStore/bin/Debug/net6.0/*.*
+
+/myStore/myStoreDatabase/obj/Debug/myStoreDatabase.pdb

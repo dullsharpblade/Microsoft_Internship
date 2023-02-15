@@ -4,7 +4,7 @@ SELECT TOP (1000)
   FROM [myStore].[dbo].[customer]
   order by customerid asc
   SET identity_insert customer off
-  go
+  
 --  ALTER TABLE customer
 --DROP COLUMN [phonenumber]
 /*  update customer set customerid = 2 where name = 'Jane Doe' 
