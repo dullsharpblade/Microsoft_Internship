@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dulls\\Source\\Repos\\dullsharpblade\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj": {}
+    "e:\\Projects\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dulls\\Source\\Repos\\dullsharpblade\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj": {
+    "e:\\Projects\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dulls\\Source\\Repos\\dullsharpblade\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj",
+        "projectUniqueName": "e:\\Projects\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj",
         "projectName": "myStore",
-        "projectPath": "C:\\Users\\dulls\\Source\\Repos\\dullsharpblade\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj",
-        "packagesPath": "C:\\Users\\dulls\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dulls\\source\\repos\\dullsharpblade\\Microsoft_Internship\\myStore\\myStore\\obj\\",
+        "projectPath": "e:\\Projects\\Microsoft_Internship\\myStore\\myStore\\myStore.csproj",
+        "packagesPath": "C:\\Users\\andrewng\\.nuget\\packages\\",
+        "outputPath": "e:\\Projects\\Microsoft_Internship\\myStore\\myStore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dulls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\andrewng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
