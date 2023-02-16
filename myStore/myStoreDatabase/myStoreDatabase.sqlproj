@@ -64,6 +64,7 @@
     <None Include="scripts\insertscript.sql" />
     <None Include="scripts\SQLQuery1.sql" />
     <None Include="scripts\updatescript.sql" />
+    <Build Include="tables\product.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="myStoreDatabase.publish.xml" />
