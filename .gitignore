@@ -54,3 +54,14 @@
 /myStore/.vs/myStore/FileContentIndex/aa0d4fd6-af4f-4115-998b-c15f2dbe0fd6.vsidx
 /myStore/myStoreDatabase/myStoreDatabase.dbmdl
 /myStore/myStoreDatabase/myStoreDatabase.jfm
+*.vsidx
+/.vs/Microsoft_Internship/v17/.wsuo
+/.vs/slnx.sqlite
+/myStore/.vs/myStore/v17/.wsuo
+/myStore/.vs/slnx.sqlite
+/myStore/myStore/obj/Release/net6.0/myStore.assets.cache
+/myStore/myStore/obj/Release/net6.0/myStore.csproj.AssemblyReference.cache
+/myStore/myStore/obj/Release/net6.0/myStore.GeneratedMSBuildEditorConfig.editorconfig
+/myStore/myStore/obj/myStore.csproj.nuget.dgspec.json
+/myStore/myStore/obj/myStore.csproj.nuget.g.props
+/myStore/myStore/obj/project.assets.json

@@ -35,7 +35,7 @@ namespace myStore.Helpers
                         Address = reader["address"].ToString(),
                         State = reader["state"].ToString(),
                         Zipcode = reader["zipcode"].ToString(),
-                        Phonenumber = reader["phonenumber"].ToString(),
+                        //Phonenumber = reader["phonenumber"].ToString(),
                         Country = reader["country"].ToString()
                     };
 
