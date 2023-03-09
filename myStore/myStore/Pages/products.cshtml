@@ -1,4 +1,29 @@
-﻿@page
-@model myStore.Pages.productsModel
+﻿
+@page
+@model myStore.Pages.ProductModel
+@using myStore.Entities
 @{
+    ViewData["Title"] = "Home page";
 }
+
+<div class="text-center">
+    <h1 class="display-4">Products List</h1>
+    <table>
+        <tr>
+            <th>Productid</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        @foreach (Product prod in Model.Products)
+        {
+            <tr>
+                <td>@prod.Productid</td>
+                <td>@prod.Name</td>
+                <td>@prod.Desc</td>
+                <td>@prod.Price</td>
+            </tr>
+        }
+
+    </table>
+</div>

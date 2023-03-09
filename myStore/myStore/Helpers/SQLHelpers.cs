@@ -45,6 +45,33 @@ namespace myStore.Helpers
 
             return customerList;
         }
+        public List<Product> GetProductsList()
+        {
+            List<Product> productList = new List<Product>();
 
+            string query = "select * from Product";
+            using (SqlConnection conn = new SqlConnection(this.SqlConnectionString))
+            {
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Product prod = new Product()
+                    {
+                        Productid = Convert.ToInt32(reader["productid"]),
+/*                        Name = reader["product"].ToString(), */
+                        Desc = reader["desc"].ToString(),
+                        Price = reader["price"].ToString(),
+                    };
+                    productList.Add(prod);
+                }
+            }
+
+            return productList;
+        }
     }
 }

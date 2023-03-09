@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
@@ -10,11 +11,11 @@ namespace myStore.Pages
     public class CustomersModel : PageModel
     {
         public readonly IConfiguration _configuration;
-        public CustomersModel (IConfiguration configuration)
+        public CustomersModel(IConfiguration configuration)
         {
             _configuration = configuration;
         }
-        
+
         public List<Customer> Customers { get; set; }
 
 

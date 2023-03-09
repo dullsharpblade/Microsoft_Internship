@@ -2,8 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\myStore",
-    "\\myStore\\Entities"
+    "\\myStoreDatabase",
+    "\\myStoreDatabase\\tables",
+    "\\myStore\\Entities",
+    "\\myStore\\Pages",
+    "\\myStore\\Properties",
+    "\\myStore\\wwwroot",
+    "\\sqlscripts"
   ],
-  "SelectedNode": "\\myStore\\Entities\\Customer.cs",
+  "SelectedNode": "\\myStore\\Pages\\Products.cshtml",
   "PreviewInSolutionExplorer": false
 }
