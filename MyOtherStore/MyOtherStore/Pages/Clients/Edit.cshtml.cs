@@ -22,7 +22,7 @@ namespace MyOtherStore.Pages.Clients
                     String sql = "SELECT * FROM clients WHERE id=@id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("id", id);
+                        command.Parameters.AddWithValue("@id", id);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())
@@ -32,6 +32,8 @@ namespace MyOtherStore.Pages.Clients
                                 clientInfo.email = reader.GetString(2);
                                 clientInfo.phone = reader.GetString(3);
                                 clientInfo.address = reader.GetString(4);
+                                System.Diagnostics.Debug.WriteLine(clientInfo.id);
+
                             }
                         }
                     }
@@ -42,6 +44,7 @@ namespace MyOtherStore.Pages.Clients
                 errorMessage = ex.Message;
             }
         }
+
         public void OnPost()
         {
             clientInfo.id = Request.Form["id"];
@@ -64,7 +67,7 @@ namespace MyOtherStore.Pages.Clients
                 {
                     connection.Open();
                     String sql = "UPDATE clients " + 
-                                 "SET name=@name, email=@email, phone=@phone, address=@address" + 
+                                 "SET name=@name, email=@email, phone=@phone, address=@address " + 
                                  "WHERE id=@id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
