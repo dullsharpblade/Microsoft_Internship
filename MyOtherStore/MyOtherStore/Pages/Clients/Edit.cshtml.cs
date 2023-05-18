@@ -32,8 +32,6 @@ namespace MyOtherStore.Pages.Clients
                                 clientInfo.email = reader.GetString(2);
                                 clientInfo.phone = reader.GetString(3);
                                 clientInfo.address = reader.GetString(4);
-                                System.Diagnostics.Debug.WriteLine(clientInfo.id);
-
                             }
                         }
                     }
@@ -44,7 +42,6 @@ namespace MyOtherStore.Pages.Clients
                 errorMessage = ex.Message;
             }
         }
-
         public void OnPost()
         {
             clientInfo.id = Request.Form["id"];

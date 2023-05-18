@@ -1,10 +1,10 @@
 ﻿@page
-@model MyOtherStore.Pages.Clients.CreateModel
+@model MyOtherStore.Pages.Account.RegisterModel
 @{
 }
 
 <br>
-<h2>New Client</h2>
+<h2>New Account</h2>
 
 
 
@@ -18,27 +18,15 @@
 <!--17:29 YouTube stopping point-->
 <form method="POST">
     <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Name</label>
+        <label class="col-sm-3 col-form-label">Username</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" value="@Model.clientInfo.name">
+            <input type="text" class="form-control" name="username" value="@Model.accountInfo.username">
         </div>
     </div>
     <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Email</label>
+        <label class="col-sm-3 col-form-label">Password</label>
         <div class="col-sm-6">
-            <input type="text" class="form-control" name="email" value="@Model.clientInfo.email">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Phone</label>
-        <div class="col-sm-6">
-            <input type="text" class="form-control" name="phone" value="@Model.clientInfo.phone">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Address</label>
-        <div class="col-sm-6">
-            <input type="text" class="form-control" name="address" value="@Model.clientInfo.address">
+            <input type="text" class="form-control" name="password" value="@Model.accountInfo.password">
         </div>
     </div>
 
@@ -59,11 +47,11 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
         <div class="col-sm-3 d-grid">
-            <a class="btn btn-outline-primary" href="~/Clients/Index" role="button">Cancel</a>
+            <a class="btn btn-outline-primary" href="~/Index" role="button">Cancel</a>
         </div>
     </div>
 
-    
 
-    
+
+
 </form>

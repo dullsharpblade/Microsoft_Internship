@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dulls\source\repos\dullsharpblade\Microsoft_Internship\MyOtherStore\MyOtherStore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/dulls/source/repos/dullsharpblade/Microsoft_Internship/MyOtherStore/MyOtherStore/Pages/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dulls/source/repos/dullsharpblade/Microsoft_Internship/MyOtherStore/MyOtherStore/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dulls/source/repos/dullsharpblade/Microsoft_Internship/MyOtherStore/MyOtherStore/Pages/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dulls/source/repos/dullsharpblade/Microsoft_Internship/MyOtherStore/MyOtherStore/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dulls/source/repos/dullsharpblade/Microsoft_Internship/MyOtherStore/MyOtherStore/Pages/Clients/Edit.cshtml]
