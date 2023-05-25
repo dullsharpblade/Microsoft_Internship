@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
-
 namespace MyOtherStore.Pages.Account
 {
     public class RegisterModel : PageModel
@@ -51,9 +50,9 @@ namespace MyOtherStore.Pages.Account
                 return;
             }
             accountInfo.username = ""; accountInfo.password = ""; 
-            successMessage = "New account created";
+            successMessage = "New account created, press cancel to return to account page";
 
-            Response.Redirect("/Account/Index");
+ //           Response.Redirect("/Account/Index");
         }
     }
 }
