@@ -2,12 +2,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
 
-namespace MyOtherStore.Pages.Clients
+namespace MyOtherStore.Pages.Account
 {
     public class IndexModel : PageModel
     {
         public List<AccountInfo> listAccounts = new List<AccountInfo>();
-        public void OnGet()
+        public void
+            
+            
+            
+            OnGet()
         {
             try
             {
@@ -16,7 +20,7 @@ namespace MyOtherStore.Pages.Clients
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sql = "SELECT * FROM clients";
+                    String sql = "SELECT * FROM acc_info";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())

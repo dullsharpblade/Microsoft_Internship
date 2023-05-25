@@ -1,0 +1,21 @@
+﻿@page
+@model MyOtherStore.Pages.Account.LoginModel
+@{
+}
+<form method="post">
+    <label for="username">Username:</label>
+    <input type="text" user_id="username" name="Username" />
+
+    <label for="password">Password:</label>
+    <input type="text" user_id="password" name="Password" />
+
+    <button type="submit">Submit</button>
+</form>
+@if(!string.IsNullOrEmpty(Model.Message))
+    {
+        <p>@Model/Message</p>
+    }
+
+    @if (Model.InitialStatus){
+        <p>Page</p>
+    }

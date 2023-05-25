@@ -7,7 +7,11 @@ namespace MyOtherStore.Pages.Clients
     public class IndexModel : PageModel
     {
         public List<ClientInfo> listClients = new List<ClientInfo>();
-        public void OnGet()
+        public void
+            
+            
+            
+            OnGet()
         {
             try
             {

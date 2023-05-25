@@ -19,7 +19,7 @@ namespace MyOtherStore.Pages.Account
             accountInfo.password = Request.Form["password"];
 
 
-            if (AccountInfo.username.Length == 0 || AccountInfo.password.Length == 0)
+            if (accountInfo.username.Length == 0 || accountInfo.password.Length == 0)
             {
                 errorMessage = "All the fields are required";
                 return;
@@ -53,7 +53,7 @@ namespace MyOtherStore.Pages.Account
             accountInfo.username = ""; accountInfo.password = ""; 
             successMessage = "New account created";
 
-            Response.Redirect("/Index");
+            Response.Redirect("/Account/Index");
         }
     }
 }

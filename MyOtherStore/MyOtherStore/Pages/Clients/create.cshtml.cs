@@ -15,6 +15,7 @@ namespace MyOtherStore.Pages.Clients
 
         public void OnPost()
         {
+            
             clientInfo.name = Request.Form["name"];
             clientInfo.email = Request.Form["email"];
             clientInfo.phone = Request.Form["phone"];
