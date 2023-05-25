@@ -56,10 +56,4 @@ namespace MyOtherStore.Pages.Account
             Response.Redirect("/Index");
         }
     }
-    public class AccountInfo
-    {
-        public String username;
-        public String password;
-    }
-
 }
