@@ -4,18 +4,11 @@ using System.Data.SqlClient;
 
 namespace MyOtherStore.Pages.Account
 {
-    public class BaseModel : PageModel
-    {
-        public bool InitialStatus { get; set; } = false;
-    }
-    public class LoginModel : BaseModel
-    {
-        private readonly StatusService _statusService;
 
-        public LoginModel(StatusService statusService)
-        {
-            _statusService = statusService;
-        }
+    public class LoginModel : PageModel
+    {
+        public String errorMessage = "";
+
         [BindProperty]
         public string Username { get; set; }
 
@@ -24,8 +17,22 @@ namespace MyOtherStore.Pages.Account
 
         public string Message { get; set; }
 
-        public void OnPost()
+        public void OnGet()
         {
+            if (HttpContext.Session.GetString("Username") != null)
+            {
+                string temp = HttpContext.Session.GetString("Username"); 
+            }
+        }
+        
+        public void OnPost()
+ 
+        {
+            if (string.IsNullOrWhiteSpace(Request.Form["Password"]) || string.IsNullOrWhiteSpace(Request.Form["Username"]))
+            {
+                errorMessage = "Missing Field";
+                return;
+            }
             bool isUsernameValid = CheckUsername();
             bool isPasswordValid = false;
 
@@ -35,8 +42,10 @@ namespace MyOtherStore.Pages.Account
 
                 if (isPasswordValid)
                 {
-                    InitialStatus = true;
+//                    InitialStatus = true;
                     Message = "Logged in";
+                    HttpContext.Session.SetString("Username", Username);
+                    Response.Redirect("/Account/Index");
                 }
                 else
                 {

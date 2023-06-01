@@ -2,6 +2,13 @@
 @model MyOtherStore.Pages.Account.LoginModel
 @{
 }
+@if (Model.errorMessage.Length > 0)
+{
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+        <strong>@Model.errorMessage</strong>
+        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+    </div>
+}
 <form method="post">
     <label for="username">Username:</label>
     <input type="text" user_id="username" name="Username" />
@@ -11,11 +18,3 @@
 
     <button type="submit">Submit</button>
 </form>
-@if(!string.IsNullOrEmpty(Model.Message))
-    {
-        <p>@Model.Message</p>
-    }
-
-    @if (Model.InitialStatus){
-        <p>Page</p>
-    }

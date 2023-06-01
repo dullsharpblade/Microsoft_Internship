@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
+using static MyOtherStore.Pages.Clients.IndexModel;
 
 namespace MyOtherStore.Pages.Clients
 {

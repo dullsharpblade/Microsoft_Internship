@@ -1,17 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
-
 namespace MyOtherStore.Pages.Clients
 {
     public class IndexModel : PageModel
     {
         public List<ClientInfo> listClients = new List<ClientInfo>();
-        public void
-            
-            
-            
-            OnGet()
+        public string UserName { get; set; }
+        public void OnGet()
         {
             try
             {
@@ -23,7 +19,7 @@ namespace MyOtherStore.Pages.Clients
                     String sql = "SELECT * FROM clients";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
-                        using (SqlDataReader reader = command.ExecuteReader()) 
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
                             while (reader.Read())
                             {
@@ -36,8 +32,8 @@ namespace MyOtherStore.Pages.Clients
                                 clientInfo.created_at = reader.GetDateTime(5).ToString();
 
                                 listClients.Add(clientInfo);
-     
-                       }
+
+                            }
                         }
                     }
                 }
@@ -47,16 +43,17 @@ namespace MyOtherStore.Pages.Clients
                 Console.WriteLine("Exception: " + ex.ToString());
             }
         }
-    }
 
 
-    public class ClientInfo
-    {
-        public String id;
-        public String name;
-        public String email;
-        public String phone;
-        public String address;
-        public String created_at;
+
+        public class ClientInfo
+        {
+            public String id;
+            public String name;
+            public String email;
+            public String phone;
+            public String address;
+            public String created_at;
+        }
     }
 }
