@@ -1,11 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
-
+public class StatusService
+{
+    public bool InitialStatus { get; set; }
+}
 namespace MyOtherStore.Pages.Account
 {
-    public class IndexModel : PageModel
+    public class IndexModel : BaseModel
     {
+        private readonly StatusService _statusService;
+
+        public IndexModel(StatusService statusService)
+        {
+            _statusService = statusService;
+        }
         public List<AccountInfo> listAccounts = new List<AccountInfo>();
         public void
             

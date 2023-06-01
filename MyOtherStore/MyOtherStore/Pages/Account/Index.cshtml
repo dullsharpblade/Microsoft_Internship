@@ -6,5 +6,9 @@
 <!--html goes here-->
 <!--12:50 https://www.youtube.com/watch?v=T-e554Zt3n4&t=1171s-->
 <br>
-<h2>Sign In / Sign Up</h2>
+@if (Model.InitialStatus)
+{
+    <h2>Sign In / Sign Up</h2>
 <a class="btn btn-outline-primary" asp-page="/Account/Register">Sign Up</a>
+<a class="btn btn-outline-primary" asp-page="/Account/Login">Sign In</a>
+}
